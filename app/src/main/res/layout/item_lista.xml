@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android:id="@+id/cvLista"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="#dbd08e">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbHecho"
+            android:checked="false" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvElemento"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            card_view:srcCompat="@android:drawable/ic_delete"
+            android:id="@+id/btBorrar" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
